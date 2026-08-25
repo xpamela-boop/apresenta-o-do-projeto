@@ -1,51 +1,56 @@
-# 📌 Nome do Projeto
+# 🌾 AgroTech & Pecuária Inteligente
 
-> **Uma breve descrição do projeto em uma frase impactante.**
+> **Plataforma Web de Monitoramento Agropecuário e Gestão de Campo**
+
+![AgroTech Dashboard Header](https://images.unsplash.com/photo-1500937386664-56d1dfef3854?auto=format&fit=crop&w=1200&q=80)
 
 ---
 
 ## 👥 Integrantes do Grupo
-* **Nome 1** - *Função / Contribuição*
-* **Nome 2** - *Função / Contribuição*
-* **Nome 3** - *Função / Contribuição*
+* **Ana Silva** - *Pesquisa e Modelagem de Dados Agronômicos*
+* **Bruno Costa** - *Desenvolvimento Front-end & UI/UX*
+* **Carla Oliveira** - *Integração IoT e Engenharia Agrícola*
 
 ---
 
 ## 💡 Sobre o Projeto
-Descrição detalhada do problema abordado, os objetivos e como a solução foi desenvolvida ao longo da unidade.
+O **AgroTech** é um projeto desenvolvido para otimizar o acompanhamento da produtividade no campo. A plataforma unifica métricas de **agricultura de precisão** (umidade do solo, precipitação e nutrição foliar) e **pecuária inteligente** (rastreabilidade do rebanho, ganho de peso e saúde animal) em um único dashboard interativo.
 
 ---
 
 ## 🔍 Reflexão e Descobertas do Grupo
 
-Ao longo do desenvolvimento do projeto, o grupo percorreu um processo criativo intenso. Destacamos **duas descobertas importantes** que moldaram o resultado final:
+Durante o desenvolvimento deste projeto na unidade, o grupo vivenciou um processo criativo e investigativo intenso. Destacamos **duas grandes descobertas**:
 
-### 🌟 Descoberta 1: Sobre o Problema e a Solução
-> *"Perceber o problema sob um novo ângulo mudou nossa abordagem."*
+### 🌟 1. Descoberta sobre o Problema e a Solução
+> *"A tecnologia no campo precisa ser intuitiva, direta e focada no momento da decisão."*
 
-* **O que descobrimos:** Durante a fase de investigação, percebemos que o problema central não era apenas a falta de recursos, mas a dificuldade de acesso e organização desses recursos pelos usuários.
-* **Mudança de perspectiva:** Inicialmente, planejávamos criar uma solução complexa com múltiplas funcionalidades. Ao entender a fundo o problema, decidimos simplificar a proposta, focando em uma solução intuitiva, direta e focada na experiência do usuário.
-
-### 🛠️ Descoberta 2: Sobre o Processo Criativo
-> *"A etapa de testes de usabilidade e feedback transformou o projeto."*
-
-* **O que descobrimos:** A etapa em que apresentamos os primeiros rascunhos para pessoas fora do grupo trouxe percepções que não tínhamos considerado internamente.
-* **Impacto no projeto:** Os feedbacks recebidos nos ajudaram a reorganizar a estrutura dos materiais finais, corrigir falhas de fluxo e entregar uma solução muito mais eficiente e bem acabada.
+* **O que aprendemos:** Inicialmente, acreditávamos que o maior desafio do produtor rural era a *ausência de dados*[cite: 3]. Durante nossas pesquisas e entrevistas com produtores regionais, descobrimos que o problema real era o **excesso de dados desconectados**[cite: 3].
+* **Impacto na Solução:** Redesenhamos a plataforma para centralizar os dados essenciais de safra e rebanho em alertas simples com cores indicativas (Verde = Normal, Amarelo = Atenção, Vermelho = Crítico)[cite: 3].
 
 ---
 
-## 📊 Síntese do Processo de Criação
+### 🛠️ 2. Descoberta sobre o Processo Criativo
+> *"Validar protótipos em campo revelou detalhes que a sala de aula não mostra."*
 
-| Etapa | Foco | Principal Percepção |
+* **O que aprendemos:** Quando testamos a primeira versão da interface em dispositivos móveis sob luz solar intensa, percebemos que o contraste e os tamanhos dos botões originais eram inadequados para uso no campo[cite: 3].
+* **Impacto no Projeto:** Adotamos um design de alto contraste (*Dark/Light Mode* focado em legibilidade) e simplificamos a navegação por cartões interativos[cite: 3].
+
+---
+
+## 📊 Síntese da Jornada do Projeto
+
+| Etapa | Atividade Principal | Descoberta / Aprendizado |
 | :--- | :--- | :--- |
-| **1. Investigação** | Compreensão do problema | Aprofundar a pesquisa revelou necessidades oculta dos usuários. |
-| **2. Ideação** | Criação de propostas | Diversificar as ideias no início evitou soluções óbvias. |
-| **3. Prototipagem** | Testes e validação | Errar cedo e barato permitiu corrigir o rumo rapidamente. |
-| **4. Finalização** | Organização dos materiais | A clareza na apresentação é tão importante quanto a solução. |
+| **1. Investigação** | Entrevistas e levantamento de dores | Produtores buscam integração entre lavoura e pecuária. |
+| **2. Ideação** | Esboço da interface e dashboards | Menos é mais: priorizar alertas em tempo real. |
+| **3. Prototipagem** | Desenvolvimento do `index.html` e `script.js` | Testes com dados simulados garantem respostas mais rápidas. |
+| **4. Entrega Final** | Organização e documentação no GitHub | Apresentar visualmente facilita a adoção da tecnologia. |
 
 ---
 
-## 📦 Materiais Finais
-- [📁 Apresentação em Slides](./docs/apresentacao.pdf)
-- [📁 Documentação Completa](./docs/documentacao.md)
-- [📁 Protótipo / Código-Fonte](./src/)
+## 🚀 Como Executar o Projeto
+
+1. Clone o repositório:
+   ```bash
+   git clone [https://github.com/seu-usuario/agrotech-pecuaria.git](https://github.com/seu-usuario/agrotech-pecuaria.git)
