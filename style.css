@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AgroTech - Gestão Agropecuária Inteligente</title>
+  
+  <!-- Google Fonts & FontAwesome Icons -->
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <!-- Arquivo de Estilos Externo -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header>
+    <h1>🌾 AgroTech & <span>Pecuária</span></h1>
+    <p>Painel Integrado de Inteligência Agrícola e Monitoramento de Campo</p>
+    <div class="badge-container">
+      <div class="badge"><i class="fa-solid fa-wheat-awn"></i> Agricultura de Precisão</div>
+      <div class="badge"><i class="fa-solid fa-cow"></i> Pecuária 4.0</div>
+      <div class="badge"><i class="fa-solid fa-chart-line"></i> Análise de Rendimento</div>
+    </div>
+  </header>
+
+  <!-- CONTEÚDO PRINCIPAL -->
+  <div class="container">
+
+    <!-- MÉTRICAS EM TEMPO REAL -->
+    <h2 class="section-title"><i class="fa-solid fa-gauge-high"></i> Dashboard do Campo</h2>
+    <div class="grid-stats">
+      <div class="stat-card">
+        <div class="stat-header">
+          <span class="stat-label">Umidade do Solo</span>
+          <div class="stat-icon"><i class="fa-solid fa-droplet"></i></div>
+        </div>
+        <div class="stat-value" id="val-humidity">68%</div>
+        <span style="color: #4ade80; font-size: 0.85rem;"><i class="fa-solid fa-check"></i> Faixa Ideal (Milho & Soja)</span>
+      </div>
+
+      <div class="stat-card">
+        <div class="stat-header">
+          <span class="stat-label">Cabeças de Gado</span>
+          <div class="stat-icon"><i class="fa-solid fa-cow"></i></div>
+        </div>
+        <div class="stat-value" id="val-cattle">1,240</div>
+        <span style="color: #4ade80; font-size: 0.85rem;"><i class="fa-solid fa-shield-halved"></i> 99.2% Vacinados</span>
+      </div>
+
+      <div class="stat-card">
+        <div class="stat-header">
+          <span class="stat-label">Previsão Safra</span>
+          <div class="stat-icon"><i class="fa-solid fa-seedling"></i></div>
+        </div>
+        <div class="stat-value" id="val-yield">+14%</div>
+        <span style="color: #fbc02d; font-size: 0.85rem;"><i class="fa-solid fa-arrow-up"></i> Estimativa Acima da Média</span>
+      </div>
+    </div>
+
+    <!-- SEÇÃO DE REFLEXÃO E DESCOBERTAS -->
+    <h2 class="section-title"><i class="fa-solid fa-lightbulb"></i> Reflexões e Descobertas do Grupo</h2>
+    <div class="reflection-grid">
+      
+      <!-- DESCOBERTA 1 -->
+      <div class="reflection-card">
+        <img src="https://images.unsplash.com/photo-1592982537447-6f2a6a0c7c18?auto=format&fit=crop&w=800&q=80" alt="Agricultura de Precisão">
+        <div class="reflection-content">
+          <h3>1. Descoberta sobre o Problema</h3>
+          <p>Durante a investigação inicial, descobrimos que o produtor não sofre por falta de dados, mas sim pela <strong>fragmentação das informações</strong>.</p>
+          <div class="highlight-box">
+            <strong>Mudança na Solução:</strong> Unificamos sensores do solo e rastreamento bovino em um único painel de decisão rápida.
+          </div>
+        </div>
+      </div>
+
+      <!-- DESCOBERTA 2 -->
+      <div class="reflection-card">
+        <img src="https://images.unsplash.com/photo-1545468843-279d274f0969?auto=format&fit=crop&w=800&q=80" alt="Pecuária Inteligente">
+        <div class="reflection-content">
+          <h3>2. Descoberta sobre o Processo</h3>
+          <p>O teste prático com simulações no campo mostrou a importância de uma interface com <strong>alto contraste e operação offline</strong>.</p>
+          <div class="highlight-box">
+            <strong>Melhoria do Projeto:</strong> Otimizamos o carregamento dos scripts e simplificamos a visualização para uso mobile sob luz solar.
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- SIMULADOR DE DIAGNÓSTICO -->
+    <h2 class="section-title"><i class="fa-solid fa-sliders"></i> Simulador de Diagnóstico Agrícola</h2>
+    <div class="simulator-box">
+      <div class="form-group">
+        <label for="select-crop"><i class="fa-solid fa-plant-wilt"></i> Selecione o Tipo de Cultura / Atividade:</label>
+        <select id="select-crop">
+          <option value="soja">Soja (Grãos)</option>
+          <option value="milho">Milho (Safrinha)</option>
+          <option value="pecuaria">Pecuária de Corte (Pastagem)</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="select-rain"><i class="fa-solid fa-cloud-rain"></i> Condição do Clima Atual:</label>
+        <select id="select-rain">
+          <option value="ideal">Chuva Regular / Solo Úmido</option>
+          <option value="seca">Estiagem / Baixa Umidade</option>
+          <option value="excesso">Chuva Excessiva</option>
+        </select>
+      </div>
+
+      <button class="btn" onclick="simularDiagnostico()">
+        <i class="fa-solid fa-wand-magic-sparkles"></i> Gerar Diagnóstico Recomendado
+      </button>
+
+      <div class="result-area" id="result-box">
+        <h4 id="result-title" style="color: var(--accent); font-size: 1.2rem; margin-bottom: 8px;"></h4>
+        <p id="result-desc" style="color: #e2e8f0; font-size: 0.95rem;"></p>
+      </div>
+    </div>
+
+    <footer>
+      <p>🌾 Projeto AgroTech - Documentação e Código Fonte para o GitHub &copy; 2026</p>
+    </footer>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
